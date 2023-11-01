@@ -1,0 +1,169 @@
+PriceSpider.onload("5ef123a9daf2681906e978a9/config", {
+  "tag": {
+    "sellers": {
+      "bopis": [
+        310,
+        5728145
+      ],
+      "onlineGroceryDeliverySeller": [
+        6769450,
+        4529886,
+        5026224
+      ]
+    }
+  },
+  "fulfillmentPartnerSellers": [
+    6150715
+  ],
+  "loadResources": true,
+  "loadButtonCss": true,
+  "loadLocalStock": true,
+  "loadScript": true,
+  "updateTimerSeconds": [
+    0,
+    5,
+    15,
+    30
+  ],
+  "useInitialLoader": true,
+  "useProductLoader": true,
+  "useLocationLoader": true,
+  "map": {
+    "service": "mapboxgl",
+    "mapPushpinSize": [
+      24,
+      32
+    ]
+  },
+  "res": {
+    "en": {
+      "wtbButtonLabel": "BUY NOW",
+      "wtbButtonDisabled": "NO SELLERS FOUND",
+      "wtbButtonDisabledNoSku": "NO SELLERS FOUND",
+      "wtbButtonLabelUnresolvedSku": "NO SELLERS FOUND",
+      "wtbButtonDisabledNoSellers": "NO SELLERS FOUND"
+    }
+  },
+  "psOmni": true,
+  "wtb4": {
+    "active": true,
+    "token": "e6a66f66e5ec43e4bba0a30ad436b319"
+  },
+  "widgetType": "lightbox",
+  "mapKey": "pk.eyJ1IjoicHJpY2VzcGlkZXIiLCJhIjoiY2tidjhjMmc1MDAybzJwcWY3ZDB3Mnp6aCJ9.ghpnW_VzA5yVv1ESvwx98Q",
+  "googleGeocodeApiKey": "AIzaSyCnPE8TbelBFRTcnO2QmaR7wb7wNBNUGMY",
+  "loadBrowserLocation": false,
+  "loadIpLocation": true,
+  "loadMarketplaceSellers": false,
+  "requireSellers": "none",
+  "href": "",
+  "rules": [
+    {
+      "match": {
+        "countryCode": [
+          "US"
+        ],
+        "tag": [
+          "US Sprite Zero"
+        ],
+        "sku": []
+      },
+      "actions": {
+        "online": [
+          "includeSellers:[167,189,191,7058,7059,286263,576126,3835832,3838671,3838673,3868505,6150715]",
+          "excludeStockStatus:[discontinued,notAvailableDirect]",
+          "shuffle",
+          "explodeOnlineSellerStores:[310]",
+          "includeDistance:50m",
+          "sortByDistance",
+          "limitSameSellers:3",
+          "nestOnlineSellerStores",
+          "excludeSellersWithoutStores:[3835832,5026224,4529886,191,3838671,3835832,576126,3838673,3868505,286263]"
+        ],
+        "local": [
+          "includeSellers:[167,189,191,7058,7059,286263,576126,3835832,3838671,3838673,3868505,6150715,12986578]",
+          "excludeStockStatus:[outOfStock,discontinued]",
+          "includeDistance:100m",
+          "sortByDistance",
+          "limitSameSellers:3",
+          "limit:20",
+          "exclude:seller.id,4529886",
+          "exclude:seller.id,5026224",
+          "exclude:seller.id",
+          "exclude:seller.id"
+        ]
+      }
+    },
+    {
+      "match": {
+        "countryCode": [
+          "US"
+        ],
+        "tag": [
+          "US Sprite"
+        ],
+        "sku": []
+      },
+      "actions": {
+        "online": [
+          "includeSellers:[167,189,191,7058,7059,286263,576126,3835832,3838671,3838673,3868505,6150715]",
+          "excludeStockStatus:[discontinued,notAvailableDirect]",
+          "shuffle",
+          "explodeOnlineSellerStores:[310]",
+          "includeDistance:50m",
+          "sortByDistance",
+          "limitSameSellers:3",
+          "nestOnlineSellerStores",
+          "excludeSellersWithoutStores:[3835832,5026224,4529886,191,3838671,3835832,576126,3838673,3868505,286263]"
+        ],
+        "local": [
+          "includeSellers:[167,189,191,7058,7059,286263,576126,3835832,3838671,3838673,3868505,6150715,12986578]",
+          "excludeStockStatus:[outOfStock,discontinued]",
+          "includeDistance:100m",
+          "sortByDistance",
+          "limitSameSellers:3",
+          "limit:20",
+          "exclude:seller.id,4529886",
+          "exclude:seller.id,5026224",
+          "exclude:seller.id",
+          "exclude:seller.id"
+        ]
+      }
+    },
+    {
+      "match": {
+        "countryCode": [
+          "US"
+        ],
+        "tag": [],
+        "sku": []
+      },
+      "actions": {
+        "online": [
+          "includeSellers:[167,189,191,7058,7059,286263,576126,3835832,3838671,3838673,3868505,6150715]",
+          "excludeStockStatus:[discontinued,notAvailableDirect]",
+          "shuffle",
+          "explodeOnlineSellerStores:[310]",
+          "includeDistance:50m",
+          "sortByDistance",
+          "limitSameSellers:3",
+          "nestOnlineSellerStores",
+          "excludeSellersWithoutStores:[3835832,5026224,4529886,191,3838671,3835832,576126,3838673,3868505,286263]"
+        ],
+        "local": [
+          "includeSellers:[167,189,191,7058,7059,286263,576126,3835832,3838671,3838673,3868505,6150715,12986578]",
+          "excludeStockStatus:[outOfStock,discontinued]",
+          "includeDistance:100m",
+          "sortByDistance",
+          "limitSameSellers:3",
+          "limit:20",
+          "exclude:seller.id,4529886",
+          "exclude:seller.id,5026224",
+          "exclude:seller.id",
+          "exclude:seller.id"
+        ]
+      }
+    }
+  ],
+  "isLiteWidget": false
+})
